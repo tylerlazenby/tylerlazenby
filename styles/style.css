@@ -1,0 +1,65 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    min-height: calc(100vh - 108px);
+}
+
+.dark-header h1 {
+    color: white;
+}
+
+.dark-header .header-container, .dark-footer .dark-footer-container , .light-main .light-main-container {
+    width: 900px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.dark-footer, .dark-header {
+    background: #343434;
+    margin: 0;
+    padding: 10px;
+}
+
+.profile {
+    float: right;
+    border-radius: 100%;
+    box-shadow: 0 0 10px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.dark-footer {
+    min-height: 50px;
+    color: #ccc;
+}
+
+.light-main {
+    font-size: 1.6rem;
+}
+
+#assignmentList {
+    border-top: #343434 solid 1px;
+}
+
+.light-main-container {
+    box-shadow: 0 0 10px;
+    padding: 10px;
+    margin: 10px auto !important;
+    border-radius: 25px;
+}
