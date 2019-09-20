@@ -26,7 +26,7 @@ a:hover {
 
 .dark-header .header-container, .dark-footer .dark-footer-container , .light-main .light-main-container {
     width: 900px;
-    max-width: 900px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -55,6 +55,8 @@ a:hover {
 
 .light-main {
     font-size: 1.6rem;
+    max-width: 100%;
+    margin: 0 50px;
 }
 
 #assignmentList {
@@ -66,4 +68,5 @@ a:hover {
     padding: 10px;
     margin: 10px auto !important;
     border-radius: 25px;
+    max-width: 100%;
 }
