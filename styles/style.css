@@ -49,6 +49,10 @@ a:hover {
     color: #ccc;
 }
 
+.dark-footer-container a {
+    color: #888888
+}
+
 .light-main {
     font-size: 1.6rem;
 }
