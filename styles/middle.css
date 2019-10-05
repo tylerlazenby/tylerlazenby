@@ -2,4 +2,13 @@
     .profile {
         float: right;
     }
+
+    .top-nav-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .top-nav-list-item a {
+        font-size: 1rem;
+    }
 }
