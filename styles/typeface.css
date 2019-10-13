@@ -1,0 +1,33 @@
+.site-header, .header-1, .header-2, .header-3{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.footer-navigation, .header-3 {
+    font-weight: bold;
+    font-size: 0.9375rem;
+}
+
+.primary-navigation, .footer, .paragraph {
+    font-family: 'Roboto', sans-serif;
+}
+
+.site-header {
+    font-size: 1.5625rem;
+}
+
+.primary-navigation, .header-1 {
+    font-size: 1.25rem;
+}
+
+.header-2 {
+    font-size: 1rem;
+}
+
+.header-3 {
+    font-size: 0.9375rem;
+}
+
+.paragraph {
+    font-size: 0.8750rem;
+}
