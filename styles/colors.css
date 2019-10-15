@@ -1,0 +1,35 @@
+.site-header {
+    background: #14D010;
+}
+
+.primary-navigation {
+    background: #1F9496;
+}
+
+.footer-navigation {
+    background: #168CA5;
+}
+
+.site-header, .primary-navigation, .footer-navigation {
+    color: white;
+}
+
+.header-1 {
+    color: #14D010;
+}
+
+.header-2 {
+    color: #1F9496;
+}
+
+.header-3 {
+    color: #168CA5;
+}
+
+.paragraph {
+    color: #404040;
+}
+
+.link {
+    color: #F7552B;
+}

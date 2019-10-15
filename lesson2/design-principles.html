@@ -5,9 +5,61 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Design Principals &raquo; Tyler A. Lazenby</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/middle.css">
 </head>
 <body>
+<div class="content">
+    <header class="dark-header">
+        <div class="header-container">
+            <h1 class="sr-only">Design Principals</h1><!--Here to increase SEO score-->
+            <h2><a href="../">Tyler A. Lazenby</a></h2>
+        </div>
+    </header>
 
+    <main class="light-main">
+        <!--Breadcrumbs-->
+        <nav class="breadcrumbs">
+            <p><a href="../">Home</a> &raquo; Design Principals</p>
+        </nav>
+
+        <!--Main Content-->
+        <h2>Design Principals</h2>
+        <section class="light-main-container">
+            <h2>Hick's Law</h2>
+            <p><span class="inline-heading">Company Name: </span>Newegg</p>
+            <p><span class="inline-heading">URL: </span><a target="_blank" href="https://www.newegg.com/Components/Store/ID-1">https://www.newegg.com/Components/Store/ID-1</a></p>
+            <p><span class="inline-heading">Explanation: </span>This site shows only a few categories that they have found to be the most used. The top navigation is hidden but easily accessible so that decision making is easily switched to the product selection. This increases conversion on the site by shifting the focus away from decisions to move around the site. It also helps the user feel like they only have to choose a product rather than keep trying to find the right location in the site.</p>
+            <p><span class="inline-heading">Snapshot:</span></p>
+            <img class="mobile-snapshot" alt="newegg site" src="../img/mobile-newegg-site.jpg">
+        </section>
+        <section class="light-main-container">
+            <h2>Rule of Thirds</h2>
+            <p><span class="inline-heading">Company Name: Outlet PC</span></p>
+            <p><span class="inline-heading">URL: </span><a href="https://www.outletpc.com/">https://www.outletpc.com/</a></p>
+            <p><span class="inline-heading">Explanation: </span>This site shows graphics that specifically showcase the rule of thirds, especially the red banner showcasing memory. Even though it simply looks like it right and left aligned you should note that the text on the left isn't spanning the entire space between copy and image. This was a deliberate decision to make sure that they followed the rule of thirds.</p>
+            <p><span class="inline-heading">Snapshot:</span></p>
+            <img src="../img/mobile-outlet-pc.jpg" alt="outlet pc website" class="mobile-snapshot">
+        </section>
+        <section class="light-main-container">
+            <h2>PARC: Alignment</h2>
+            <p><span class="inline-heading">Company Name: </span>Nvidia</p>
+            <p><span class="inline-heading">URL: </span><a href="https://www.nvidia.com/en-in/geforce/">https://www.nvidia.com/en-in/geforce/</a></p>
+            <p><span class="inline-heading">Explanation:  </span>This site is shows what could be called by most web designers a "splash page". The concept here is that the eye is drawn to contrastingly aligned elements. Other factors here play a part in making sure this works but the idea is that although the alignment of the most noticeable items is asymmetrical, that allows the user to quickly see the most important parts of the web page.</p>
+            <p><span class="inline-heading">Snapshot:</span></p>
+            <img src="../img/mobile-nvidia.jpg" alt="nvidia website" class="mobile-snapshot">
+        </section>
+    </main>
+</div><!-- End content push down method -->
+<footer class="dark-footer">
+    <div class="dark-footer-container">
+        <p>&copy; <span id="currentYear"></span> | Tyler A. Lazenby | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p class="update-message">Last Updated: <span id="lastUpdatedDate"></span></p>
+    </div>
+</footer>
+<script src="../script/dates.js"></script>
 </body>
 </html>

@@ -20,8 +20,14 @@ a:hover {
     min-height: calc(100vh - 108px);
 }
 
-.dark-header h1 {
+.dark-header h1, .dark-header h2 {
     color: white;
+    font-size: 2em;
+}
+
+.dark-header h2 a {
+    color: white;
+    text-decoration: none;
 }
 
 .dark-header .header-container, .dark-footer .dark-footer-container , .light-main .light-main-container {
@@ -39,7 +45,7 @@ a:hover {
 .profile {
     float: right;
     border-radius: 100%;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 200px;
     max-width: 100%;
 }
@@ -55,10 +61,9 @@ a:hover {
 
 .light-main {
     font-size: 1.6rem;
+    width: 900px;
     max-width: 100%;
-    margin: 0 50px;
-    display: grid;
-    grid-template-columns: 1fr;
+    margin: auto
 }
 
 #assignmentList {
@@ -66,41 +71,93 @@ a:hover {
 }
 
 .light-main-container {
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
     margin: 10px auto !important;
-    border-radius: 25px;
+    border-radius: 5px;
     max-width: 100%;
 }
 
-/* Main Page Navigation Styles */
-.top-nav {
-    background-color: #888888;
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.breadcrumbs {
+    font-size: 1rem;
+}
+
+.light-main a {
+    color: darkred;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobile-snapshot {
+    max-width: 300px;
+    border: 1px solid #000;
+}
+
+.inline-heading {
+    font-weight: bold;
+}
+
+.notice {
+    color: #B22222;
+    font-size: 1.2rem;
+    background: #eed0d0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.float-right {
+    float: right;
+}
+
+.profile-img {
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.full-table {
+    width: 100%;
+}
+
+table.bordered {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    table-layout: fixed;
+}
+
+table.bordered td {
+    border: 1px solid #000;
     text-align: center;
-    padding: 1px;
+    padding: 5px;
 }
 
-.top-nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+table.bordered td.first {
+    text-align: left;
 }
 
-.top-nav-list-item a{
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.75rem;
-    text-decoration: none;
-    font-size: 0.95rem;
+.subnav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background: #cccccc;
+    padding: 10px;
 }
 
-.top-nav a {
-    background-color: #bbb;
-    color: #36454f
+.subnav li {
+    margin: 0 5px;
 }
 
-.top-nav a.active {
-    color: yellow;
+.active a{
+    color: #F7552B;
 }
