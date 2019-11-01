@@ -1,0 +1,243 @@
+@import "variables";
+@import "mixins";
+
+@include breakpoint-small {
+  /*------ Global Styles ------*/
+  * {
+    margin: 0;
+  }
+
+  /*------ Header Styles ------*/
+  header {
+    margin: 0;
+    background: theme-color('background');
+    text-align: center;
+
+    & img {
+      max-width: 50px;
+    }
+
+    & img, .headings {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px;
+    }
+
+    & .header-top-heading, & .motto {
+      font-family: $heading-font-stack;
+    }
+
+    & .header-top-heading {
+      color: theme-color('primary');
+      text-shadow: darken(theme-color('primary'), 20) 1px 1px 1px;
+      font-size: 0.9rem;
+    }
+
+    & .motto {
+      color: theme-color('secondary');
+      font-size: 0.6rem;
+    }
+
+    & nav ul {
+      padding: 0;
+
+      & .active {
+        background: darken(theme-color('background'), 11);
+        &:hover {
+          background: darken(theme-color('background'), 11);
+        }
+      }
+    }
+
+    & nav ul, & nav ul li, & .nav-button {
+      background: darken(theme-color('background'), 7);
+      margin: 0;
+    }
+
+    & nav ul li {
+      color: $white;
+      list-style: none;
+      line-height: $nav-item-line-height;
+      font-family: $body-font-stack;
+
+      &:hover {
+        background: lighten(theme-color('background'), 5);
+      }
+
+      & a {
+        color: $white;
+        text-decoration: none;
+        display: block;
+        padding: 1px;
+      }
+    }
+    & .nav-button {
+      color: $white;
+      font-family: $body-font-stack;
+      font-size: 1.2rem;
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & img {
+        max-width: 15px;
+      }
+    }
+
+    & .nav-elm:first-child {
+        display: block;
+      }
+    & .nav-elm {
+      display: none;
+    }
+  }
+
+  /*----- Main Styles -----*/
+  main {
+    margin: 25px auto;
+    padding: 0 10px;
+
+    & .main-header {
+      text-align: center;
+      font-family: $heading-font-stack;
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+    }
+
+    & .main-header-img {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    & .forecast {
+      display: none;
+    }
+
+    & .weather-stats {
+      background: theme-color('accent');
+      padding: 1.5rem;
+      box-shadow: 0 0 30px $black;
+
+      & .weather-stats-heading {
+        font-family: $heading-font-stack;
+        color: $black;
+        border-bottom: 3px solid $black;
+        margin-bottom: 15px;
+      }
+
+      & .weather-stats-line {
+        font-family: $body-font-stack;
+        color: darken(theme-color('secondary'), 70);
+        font-weight: bold;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        & .weather-stats-line-category {
+          color: $black;
+          text-align: right;
+        }
+      }
+    }
+    & article {
+      margin: 15px auto;
+      background: lighten(theme-color('foreground'), 10);
+      padding: 1.3rem;
+
+      & h2, & h3 {
+        font-family: $heading-font-stack;
+      }
+
+      & h3 {
+        color: darken(theme-color('primary'), 20);
+        font-size: 1.1rem;
+        font-style: italic;
+      }
+
+      & p {
+        font-family: $body-font-stack;
+      }
+
+      & img {
+        box-shadow: 0 0 15px $black;
+      }
+    }
+
+    .img-float-right {
+      float: right;
+    }
+
+    .subheader {
+      margin-bottom: 10px;
+    }
+
+    &.gallery-main .gallery{
+      max-width: 95vw;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      & figure {
+        box-shadow: 0 0 5px 2.5px #555;
+        margin: 10px 0;
+        transition: 0.2s;
+
+        & img {
+          max-width: 100%;
+        }
+
+        & figcaption {
+          font-family: $heading-font-stack-2;
+          padding: 10px;
+          font-weight: bold;
+          color: $black;
+        }
+
+        &:hover {
+          box-shadow: 0 0 5px 5.5px #555;
+        }
+      }
+    }
+  }
+
+  footer {
+    margin: 0;
+    background: theme-color('background');
+    color: $black;
+
+    & .contact-info {
+      text-align: center;
+      background: lighten(theme-color('background'), 12);
+      padding: 1.3rem;
+      color: $white;
+
+      & h2 {
+        font-family: $heading-font-stack;
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-family: $body-font-stack;
+      }
+
+      & .max-250 {
+        max-width: 250px;
+      }
+    }
+
+    & .footer-info {
+      padding: 15px 0;
+
+      & p {
+        font-family: $body-font-stack;
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+}
+
+.responsive li {
+  display: block;
+}

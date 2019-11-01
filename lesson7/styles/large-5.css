@@ -1,0 +1,196 @@
+@media (min-width: 940px) {
+  /*------ Global Styles ------*/
+  * {
+    margin: 0; }
+
+  /*------ Header Styles ------*/
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    background: #545c52;
+    text-align: center; }
+    header .header-top {
+      display: block;
+      width: 100%; }
+    header img, header .headings {
+      display: inline-block;
+      margin: 10px; }
+    header .logo {
+      max-width: 125px; }
+    header .header-top-heading {
+      font-family: Verdana, Geneva, sans-serif;
+      color: #c0caad;
+      text-shadow: #90a26f 2px 2px 2px;
+      font-size: 2.0rem; }
+    header .motto {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #bfedef;
+      font-size: 1.2rem; }
+    header nav {
+      width: 100%; }
+    header nav ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none; }
+      header nav ul .nav-elm:first-child {
+        display: none; }
+      header nav ul .active {
+        background: #393e38; }
+        header nav ul .active:hover {
+          background: #393e38; }
+    header nav ul, header nav ul li {
+      background: #434941;
+      margin: 0; }
+    header nav ul li {
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 35px;
+      font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      min-width: 150px;
+      transition: 0.3s; }
+      header nav ul li:hover {
+        background: #60695e; }
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 1px; }
+    header .nav-button {
+      display: none; }
+
+  /*----- Main Styles -----*/
+  main {
+    max-width: 940px;
+    margin: 25px auto; }
+    main .main-header {
+      text-align: center;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 2.0rem;
+      margin-bottom: 25px; }
+    main .main-header-img > img {
+      width: 100%;
+      max-width: 900px; }
+    main .main-header-img-container {
+      margin: 10px auto;
+      position: relative; }
+    main .weather-stats {
+      position: absolute;
+      top: 25px;
+      left: 50px;
+      background: rgba(157, 169, 160, 0.9);
+      padding: 1.5rem;
+      box-shadow: 0 0 30px #000; }
+      main .weather-stats .weather-stats-heading {
+        font-family: Verdana, Geneva, sans-serif;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        margin-bottom: 15px; }
+      main .weather-stats .weather-stats-line {
+        font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+        color: #0f393a;
+        font-weight: bold;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; }
+        main .weather-stats .weather-stats-line .weather-stats-line-category {
+          color: #fff;
+          text-align: right; }
+    main .forecast {
+      margin: 15px 0; }
+      main .forecast .forecast-heading {
+        font-family: Verdana, Geneva, sans-serif;
+        text-align: center;
+        margin-bottom: 15px; }
+      main .forecast .forecast-table {
+        margin: auto; }
+        main .forecast .forecast-table thead tr th {
+          font-family: Verdana, Geneva, sans-serif;
+          background: #545c52;
+          color: #fff; }
+        main .forecast .forecast-table tbody tr td {
+          background: #d8decc;
+          font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif; }
+        main .forecast .forecast-table thead tr th, main .forecast .forecast-table tbody tr td {
+          padding: 5px 25px; }
+    main .forecast-table, main .forecast-table th, main .forecast-table td {
+      border: solid 1px #000;
+      border-collapse: collapse; }
+    main article {
+      width: 93%;
+      margin: 15px auto;
+      background: #c0eddc;
+      padding: 1.3rem;
+      border: 1px solid #4d4d4d; }
+      main article h2 {
+        font-family: Verdana, Geneva, sans-serif; }
+      main article h3 {
+        font-family: "Source Sans Pro", sans-serif;
+        color: #90a26f;
+        font-size: 1.1rem;
+        font-style: italic; }
+      main article p {
+        font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif; }
+      main article img {
+        box-shadow: 0 0 15px #000; }
+    main.gallery-main {
+      max-width: 95vw; }
+      main.gallery-main .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr; }
+        main.gallery-main .gallery .column {
+          margin: 20px;
+          padding: 10px; }
+          main.gallery-main .gallery .column figure {
+            box-shadow: 0 0 10px 5px #555;
+            transition: 0.2s;
+            height: 100%; }
+            main.gallery-main .gallery .column figure img {
+              max-width: 100%; }
+            main.gallery-main .gallery .column figure figcaption {
+              font-family: "Source Sans Pro", sans-serif;
+              padding: 10px;
+              font-weight: bold;
+              color: #000; }
+            main.gallery-main .gallery .column figure:hover {
+              box-shadow: 0 0 10px 10px #555; }
+
+  footer {
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+    background: #545c52;
+    color: #000; }
+    footer .contact-info {
+      background: #727c6f;
+      padding: 1.3rem;
+      color: #fff; }
+      footer .contact-info h2 {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 1.0rem; }
+      footer .contact-info p {
+        font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif; }
+    footer .footer-info {
+      padding: 15px 0; }
+      footer .footer-info p {
+        font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+        text-align: center;
+        color: #fff; }
+
+  .img-float-right {
+    float: right; }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+  .navigation li:first-child {
+    display: none; } }
+
+/*# sourceMappingURL=large-5.css.map */
