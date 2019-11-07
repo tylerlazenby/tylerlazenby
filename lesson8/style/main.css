@@ -1,0 +1,43 @@
+body {
+  max-width: 480px;
+  margin: auto;
+  font-size: 150%; }
+
+table {
+  width: 100%;
+  font-family: Ubuntu, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid #bbb; }
+  table thead tr:first-child th {
+    background: #628ca6;
+    padding: 10px;
+    font-size: 2em; }
+  table thead tr th {
+    font-weight: bold;
+    border: 2px solid #bbb;
+    background: #7fb9c2;
+    color: #fff; }
+  table tbody tr td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px; }
+    table tbody tr td:nth-child(2):before, table tbody tr td:nth-child(3):before {
+      content: "$"; }
+  table tbody tr:nth-child(even) {
+    background: #e7ffed; }
+  table tbody tr:nth-child(odd) {
+    background: #e7f0ed; }
+  table tbody tr:nth-child(4) td:nth-child(3) {
+    background: #628ca6;
+    color: #fff;
+    font-weight: bold; }
+  table tbody tr:nth-child(5) td:first-child {
+    font-style: italic; }
+  table tfoot {
+    background: #628ca6;
+    font-size: .8em;
+    text-align: center; }
+    table tfoot td {
+      padding: 5px; }
+
+/*# sourceMappingURL=main.css.map */

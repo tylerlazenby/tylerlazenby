@@ -1,0 +1,73 @@
+@import "variables";
+
+body {
+  max-width: 480px;
+  margin: auto;
+  font-size: 150%;
+}
+
+table {
+  width: 100%;
+  font-family: $font-family;
+  border-collapse: collapse;
+  border: 2px solid $gray;
+
+  & thead {
+    & tr {
+      &:first-child th {
+        background: $blue;
+        padding: 10px;
+        font-size: 2em;
+      }
+
+      & th {
+        font-weight: bold;
+        border: 2px solid $gray;
+        background: $light-blue;
+        color: $white;
+      }
+    }
+  }
+
+  & tbody {
+    & tr {
+      & td {
+        border: 1px solid $black;
+        text-align: center;
+        padding: 5px;
+
+        &:nth-child(2):before, &:nth-child(3):before {
+          content: "$";
+        }
+      }
+
+      &:nth-child(even) {
+        background: $data-rows;
+      }
+
+      &:nth-child(odd) {
+        background: $bright;
+      }
+
+      &:nth-child(4) td:nth-child(3) {
+        background: $blue;
+        color: $white;
+        font-weight: bold;
+      }
+
+      &:nth-child(5) td:first-child {
+        font-style: italic;
+      }
+    }
+  }
+
+  & tfoot {
+    background: $blue;
+    font-size: .8em;
+    text-align: center;
+
+    & td {
+      padding: 5px;
+    }
+  }
+}
