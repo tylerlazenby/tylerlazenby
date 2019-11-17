@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Storm Center</title>
+    <meta content="Tyler Lazenby" name="author">
+    <meta content="To be determined" name="description">
+    <meta content="To, Be, Determined" name="keywords">
+    <link href="image/logo.svg" rel="icon" sizes="16x16" type="image/gif">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/large-5.css" rel="stylesheet">
+    <link href="styles/small-5.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <img alt="logo" class="logo" src="image/logo.svg">
+        <section class="headings">
+            <h1 class="header-top-heading">My Idaho Weather</h1>
+            <h2 class="motto">Reliable Minute To Minute</h2>
+        </section>
+    </div>
+    <nav>
+        <ul class="nav-elements">
+            <li class="nav-elm"><a class="icon" href="#" onclick="toggleNav()">
+                Menu &#9776;
+            </a></li>
+            <li class="nav-elm"><a href="index.html">Home</a></li>
+            <li class="nav-elm"><a href="preston-7.html">Preston</a></li>
+            <li class="nav-elm"><a href="#">Soda Springs</a></li>
+            <li class="nav-elm"><a href="#">Fish Haven</a></li>
+            <li class="nav-elm"><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li class="nav-elm"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2 class="main-header">Storm Center</h2>
+
+    <form action="thanks.html" class="good-form" id="stormForm" method="get">
+        <div class="input-group">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" pattern="[A-Za-z]{5,}" required type="text">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="hello@world.com" type="email">
+        </div>
+
+        <div class="input-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" required type="tel">
+        </div>
+
+
+        <div class="input-group">
+            <label for="zip">Zip Code</label>
+            <input id="zip" name="zip" required type="number">
+        </div>
+
+
+        <div class="input-group">
+            <label for="stormDate">Storm Date</label>
+            <input id="stormDate" name="stormDate" type="date">
+        </div>
+
+
+        <div class="input-group">
+            <label for="stormType">Storm Type</label>
+            <input id="stormType" list="types" name="stormType" type="text">
+            <datalist id="types">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
+        </div>
+
+
+        <div class="input-group">
+            <label for="stormSeverity">Storm Severity</label>
+            <input id="stormSeverity" max="10" min="1" type="range" value="1">
+        </div>
+
+        <div class="input-group">
+            <label for="stormRegion">Storm Region</label>
+            <select id="stormRegion" name="stormRegion">
+                <option disabled selected>Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <span class="danger-message">Are you in danger?</span>
+            <div class="radio-group">
+                <label for="userInDangerYes">Yes</label>
+                <input id="userInDangerYes" name="userInDanger" type="radio" value="Yes">
+            </div>
+            <div class="radio-group">
+                <label for="userInDangerNo">No</label>
+                <input id="userInDangerNo" name="userInDanger" type="radio" value="No">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="additionalInformation">Additional Information</label>
+            <textarea cols="30" id="additionalInformation" name="additionalInformation" rows="10"></textarea>
+        </div>
+    </form>
+</main>
+<footer class="dark-gray-box">
+    <section class="footer-info" id="footerInfo">
+        <p>&copy; <span id="copyrightYear"></span> My Idaho Weather | Attributions | Tyler Lazenby</p>
+        <p id="footerDate"></p>
+    </section>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/navMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>My Idaho Weather</title>
+    <meta content="Tyler Lazenby" name="author">
+    <meta content="To be determined" name="description">
+    <meta content="To, Be, Determined" name="keywords">
+    <link href="image/logo.svg" rel="icon" sizes="16x16" type="image/gif">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/large-5.css" rel="stylesheet">
+    <link href="styles/small-5.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <img alt="logo" class="logo" src="image/logo.svg">
+        <section class="headings">
+            <h1 class="header-top-heading">My Idaho Weather</h1>
+            <h2 class="motto">Reliable Minute To Minute</h2>
+        </section>
+    </div>
+    <nav>
+        <ul class="nav-elements">
+            <li class="nav-elm"><a class="icon" href="#" onclick="toggleNav()">
+                Menu &#9776;
+            </a></li>
+            <li class="nav-elm"><a class="active" href="index.html">Home</a></li>
+            <li class="nav-elm"><a href="preston-7.html">Preston</a></li>
+            <li class="nav-elm"><a href="#">Soda Springs</a></li>
+            <li class="nav-elm"><a href="#">Fish Haven</a></li>
+            <li class="nav-elm"><a href="stormcenter.html">Storm Center</a></li>
+            <li class="nav-elm"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2 class="main-header">My Idaho Weather</h2>
+
+    <section class="home-summary">
+        <div class="city-summary">
+            <h3 class="city-header">Franklin</h3>
+            <h4 class="motto">Where will you grow?</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1788</li>
+                <li class="fact">Population: 30,458</li>
+                <li class="fact">Annual Rain Fall: 21</li>
+            </ul>
+        </div>
+        <div class="city-summary">
+            <h3 class="city-header">Fish Haven</h3>
+            <h4 class="motto">This is Fish Haven.</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1864</li>
+                <li class="fact">Population: 501</li>
+                <li class="fact">Annual Rain Fall: 14.2</li>
+            </ul>
+        </div>
+        <div class="city-summary">
+            <h3 class="city-header">Greenville</h3>
+            <h4 class="motto">Green is our way of life.</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1805</li>
+                <li class="fact">Population: 33458</li>
+                <li class="fact">Annual Rain Fall: 25</li>
+            </ul>
+        </div>
+        <div class="city-summary">
+            <h3 class="city-header">Placerton</h3>
+            <h4 class="motto">Positive Placement in Placerton.</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1946</li>
+                <li class="fact">Population: 512</li>
+                <li class="fact">Annual Rain Fall: 39</li>
+            </ul>
+        </div>
+        <div class="city-summary">
+            <h3 class="city-header">Preston</h3>
+            <h4 class="motto">Home of Napoleon Dynamite.</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1866</li>
+                <li class="fact">Population: 5,204</li>
+                <li class="fact">Annual Rain Fall: 16.65</li>
+            </ul>
+        </div>
+        <div class="city-summary">
+            <h3 class="city-header">Soda Springs</h3>
+            <h4 class="motto">Historic Oregon Trail Oasis. The Soda is on Us.</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1858</li>
+                <li class="fact">Population: 2,985</li>
+                <li class="fact">Annual Rain Fall: 15.75</li>
+            </ul>
+        </div>
+        <div class="city-summary">
+            <h3 class="city-header">Springfield</h3>
+            <h4 class="motto">Where everyone is lifted.</h4>
+            <ul class="fact-list">
+                <li class="fact">Year Founded: 1826</li>
+                <li class="fact">Population: 17,852</li>
+                <li class="fact">Annual Rain Fall: 17</li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="dark-gray-box">
+    <section class="footer-info" id="footerInfo">
+        <p>&copy; <span id="copyrightYear"></span> My Idaho Weather | Attributions | Tyler Lazenby</p>
+        <p id="footerDate"></p>
+    </section>
+</footer>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/navMenu.js"></script>
+</body>
+</html>
