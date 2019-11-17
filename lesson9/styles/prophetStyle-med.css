@@ -1,0 +1,6 @@
+@media (max-width: 1249px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2rem; } }
+
+/*# sourceMappingURL=prophetStyle-med.css.map */

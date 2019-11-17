@@ -1,0 +1,46 @@
+header {
+  padding: 0.5rem;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  background: #9da9a0; /* Fallback */
+  background: linear-gradient(white, #9da9a0);
+  color: darken(lavender, 30);
+  font-size: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 5rem;
+
+  & section {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    background: lavender;
+    border: 0.1em solid darken(lavender, 20);
+
+    & h2 {
+      color: darken(lavender, 20);
+      font-family: 'Satisfy', cursive;
+      text-shadow: 0.25rem 0.25rem 0 darken(lavender, 5);
+    }
+
+    & p  {
+      font-family: "Source Sans Pro", sans-serif;
+    }
+
+    & img {
+      max-width: 100%;
+      box-shadow: 0 0 0.5em;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: darken(lavender, 30);
+  color: white;
+  font-size: 2rem;
+}
