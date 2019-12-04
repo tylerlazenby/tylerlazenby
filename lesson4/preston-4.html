@@ -1,55 +1,192 @@
 <!doctype html>
-<html lang="en">
+<html lang="us-en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Preston &raquo; My Idaho Weather</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Preston</title>
+    <meta content="Tyler Lazenby" name="author">
+    <meta content="To be determined" name="description">
+    <meta content="To, Be, Determined" name="keywords">
+    <link href="images/weather-site-icon-small.png" rel="icon" sizes="16x16" type="image/gif">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+
 </head>
 <body>
 <header>
-    <div class="header-container">
-        <img class="site-logo" src="images/weather-site-icon-small.png" alt="">
-        <div id="siteHeader">
-            <h1>My Idaho Weather</h1>
-            <h2>Catch Phrase</h2>
-        </div>
-    </div>
-</header>
-
-<nav class="primary-navigation">
-    <ul>
-        <li>Home</li>
-        <li>Preston</li>
-        <li>Soda Springs</li>
-        <li>Fish Haven</li>
-        <li>Storm Center</li>
-        <li>Gallery</li>
-    </ul>
-</nav>
-
-<main>
-    <div class="container">
-        <h2>Preston</h2>
-        <section id="heroImage">
-            <aside>
-                <h3>Weather Summary</h3>
-            </aside>
-            <img src="https://via.placeholder.com/900" alt="hero image">
+    <div class="header-top">
+        <img alt="logo" class="logo" src="images/weather-site-icon.png">
+        <section class="headings">
+            <h1 class="header-top-heading">My Idaho Weather</h1>
+            <h2 class="motto">Reliable Minute To Minute</h2>
         </section>
-        <h2>Preston</h2>
-        <p>Text with <a href="#">link</a>.</p>
     </div>
-</main>
+    <nav>
+        <ul class="nav-elements">
+            <li class="nav-elm"><a class="icon" href="#" onclick="toggleNav()">
+                Menu &#9776;
+            </a></li>
+            <li class="nav-elm"><a href="#">Home</a></li>
+            <li class="nav-elm"><a class="active" href="#">Preston</a></li>
+            <li class="nav-elm"><a href="#">Soda Springs</a></li>
+            <li class="nav-elm"><a href="#">Fish Haven</a></li>
+            <li class="nav-elm"><a href="#">Storm Center</a></li>
+            <li class="nav-elm"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2 class="main-header">Preston Idaho</h2>
+    <div class="main-header-img-container">
+        <figure class="main-header-img">
+            <img alt="hero image" id="heroImage" src="https://via.placeholder.com/900x300">
+        </figure>
+        <section class="weather-stats" id="weatherSummary">
+            <h3 class="weather-stats-heading">Weather Summary</h3>
+            <div class="weather-stats-line">
+                <span class="weather-stats-line-category">Currently:</span>
+                <span class="weather-stats-line-data"><span id="cond">Sunny</span></span>
+            </div>
+            <div class="weather-stats-line">
+                <span class="weather-stats-line-category">Temperature:</span>
+                <span class="weather-stats-line-data"><span id="temp">76</span>&deg; F</span>
+            </div>
+            <div class="weather-stats-line">
+                <span class="weather-stats-line-category">Wind Chill:</span>
+                <span class="weather-stats-line-data"><span id="chill">78</span>&deg; F</span>
+            </div>
+            <div class="weather-stats-line">
+                <span class="weather-stats-line-category">Humidity:</span>
+                <span class="weather-stats-line-data"><span id="humid">69</span>%</span>
+            </div>
+            <div class="weather-stats-line">
+                <span class="weather-stats-line-category">Wind Speed:</span>
+                <span class="weather-stats-line-data"><span id="wind">5</span> mph</span>
+            </div>
+        </section>
+    </div>
+    <section class="forecast" id="fiveDayForecast">
+        <h2 class="forecast-heading">5 Day Forecast</h2>
+        <table class="forecast-table">
+            <thead>
+            <tr>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="symbol-container">
+                        <img alt="sunny" class="symbol" src="images/sun.svg">
+                    </div>
+                    <div class="temperature-container">
+                        <span class="temperature">89&deg; F</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="symbol-container">
+                        <img alt="sunny" class="symbol" src="images/sun.svg">
+                    </div>
+                    <div class="temperature-container">
+                        <span class="temperature">87&deg; F</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="symbol-container">
+                        <img alt="sunny" class="symbol" src="images/sun.svg">
+                    </div>
+                    <div class="temperature-container">
+                        <span class="temperature">78&deg; F</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="symbol-container">
+                        <img alt="sunny" class="symbol" src="images/sun.svg">
+                    </div>
+                    <div class="temperature-container">
+                        <span class="temperature">75&deg; F</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="symbol-container">
+                        <img alt="sunny" class="symbol" src="images/sun.svg">
+                    </div>
+                    <div class="temperature-container">
+                        <span class="temperature">72&deg; F</span>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <article>
+        <h2>Founders Day Fresco</h2>
+        <h3 class="subheader">by Janica Juarez</h3>
+        <figure class="img-float-right">
+            <img alt="camping"
+                 sizes="(min-width: 900px) 28vw, (max-width: 899px) 50vw"
+                 src="images/camping.jpg"
+                 srcset="images/camping-assets/camping_450.jpg 450w,
+                    images/camping-assets/camping_250.jpg 250w">
+        </figure>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut magna sed nisi aliquet fermentum.
+            Vestibulum et lorem condimentum, dignissim metus vel, congue ex. Curabitur aliquam quam quis tellus
+            fermentum suscipit. Donec ut nunc sagittis, viverra tortor in, molestie purus. Nunc aliquet, ex ultrices
+            convallis scelerisque, nulla neque aliquet nisi, vitae imperdiet enim nisl nec massa. Donec in hendrerit
+            erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante
+            ipsum primis in faucibus. Aliquam eget viverra diam, quis fringilla est. Etiam at facilisis dolor. Phasellus
+            varius orci urna, at luctus tellus luctus nec. Phasellus laoreet eget orci eu posuere.</p>
 
-<footer>
-    <p>Hello There</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer vel orci at
+            erat sodales imperdiet mattis a mauris. Aliquam erat volutpat. Quisque semper elit id est cursus auctor quis
+            et metus. Nulla non erat ornare, auctor nibh quis, vehicula tortor. Phasellus iaculis tempor metus et
+            sodales. Vivamus ultrices, turpis et luctus interdum, lorem nulla lobortis est, vitae fermentum dolor nunc
+            nec elit. Vivamus sit amet risus ac diam pulvinar efficitur. Duis ultricies cursus lacus et lacinia.</p>
+
+        <p>Etiam erat orci, aliquet at velit ac, bibendum faucibus nibh. Ut porta erat sed turpis mattis, vitae varius
+            ex scelerisque. Donec viverra ante non mi mattis, in imperdiet tellus sodales. Mauris elementum orci posuere
+            laoreet feugiat. Curabitur sit amet elit erat. Phasellus tellus purus, ultrices vel tincidunt sed, semper
+            viverra neque. Phasellus tempor mollis ex ut ultrices. Aenean aliquam, risus sed sodales lacinia, ligula
+            mauris convallis elit, id ultrices tortor eros vitae dui. Vivamus tincidunt nisl arcu, in elementum risus
+            rutrum eget.</p>
+    </article>
+</main>
+<footer class="dark-gray-box">
+    <section class="contact-info clearfix" id="contactInformation">
+        <h2>Contact Information</h2>
+        <iframe allowfullscreen
+                class="img-float-right max-250"
+                height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1551083707864" style="border:0" width="400"></iframe>
+        <p>Item 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Item 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Item 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Item 5: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Item 6: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+
+    </section>
+    <section class="footer-info" id="footerInfo">
+        <p>&copy; <span id="copyrightYear"></span> My Idaho Weather | Attributions | Tyler Lazenby</p>
+        <p id="footerDate"></p>
+    </section>
+    <!--<p><a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Hamburger Icon Used With Permission
+        Under Creative Commons Licence</a></p>
+    <p><a href="https://www.pexels.com/photo/flock-of-birds-917494/" target="_blank">Header Photo by Efdal YILDIZ from
+        Pexels</a></p>
+    <p>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+            href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
+        BY</a></p>-->
 </footer>
+<script src="js/toggle.js"></script>
 </body>
 </html>
