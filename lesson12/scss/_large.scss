@@ -1,0 +1,26 @@
+
+header, nav, main, footer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+nav ul {
+  padding-left: $gutter;
+}
+
+nav li {
+  width: auto;
+}
+
+nav a {
+  padding: .5rem 1rem;
+}
+    
+main figure {
+  width: 31%;
+}
+
+div.news {
+  column-count: 3;
+}
