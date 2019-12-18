@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 @include breakpoint-medium {
   main.gallery-main .gallery{
     display: grid;

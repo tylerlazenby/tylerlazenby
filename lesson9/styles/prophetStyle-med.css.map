@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,0BAA2B;EACzB,MAAO;IACL,qBAAqB,EAAE,cAAc;IACrC,MAAM,EAAE,MAAM",
-"sources": ["prophetStyle-med.scss"],
-"names": [],
-"file": "prophetStyle-med.css"
-}

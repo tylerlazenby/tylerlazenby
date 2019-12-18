@@ -1,6 +1,3 @@
-@import "variables";
-@import "mixins";
-
 html {
   height: 100%;
 }
@@ -186,6 +183,10 @@ body {
             text-align: center;
             margin-bottom: 15px;
           }
+        }
+
+        & .city-photo {
+          max-width: 100%;
         }
       }
     }

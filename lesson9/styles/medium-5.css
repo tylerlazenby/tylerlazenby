@@ -1,6 +1,0 @@
-@media (max-width: 1249px) {
-  main.gallery-main .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
-
-/*# sourceMappingURL=_medium.scss.map */
