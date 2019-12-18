@@ -436,6 +436,7 @@ body {
     background: #545c52;
     text-align: center; }
     header .header-top {
+      padding-top: 2em;
       display: block;
       width: 100%; }
     header img, header .headings {
@@ -492,35 +493,6 @@ body {
   main {
     max-width: 940px;
     margin: 25px auto; }
-    main .home-summary {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      box-shadow: 0 0 10px #555;
-      border-radius: 5px; }
-      main .home-summary .city-summary {
-        background: #0f393a;
-        margin: 25px;
-        padding: 10px;
-        border-radius: 5px; }
-        main .home-summary .city-summary .city-header {
-          color: white;
-          text-align: center;
-          font-size: 2rem;
-          margin-bottom: 5px; }
-        main .home-summary .city-summary .motto {
-          color: #9da9a0;
-          text-align: center;
-          font-style: italic;
-          margin-bottom: 15px; }
-        main .home-summary .city-summary .fact-list {
-          list-style: none;
-          padding: 0; }
-          main .home-summary .city-summary .fact-list .fact {
-            color: #98e2c6;
-            text-align: center;
-            margin-bottom: 15px; }
-        main .home-summary .city-summary .city-photo {
-          max-width: 100%; }
     main .main-header {
       text-align: center;
       font-family: Verdana, Geneva, sans-serif;
@@ -645,10 +617,58 @@ body {
 
   .navigation li:first-child {
     display: none; } }
+footer {
+  padding: 1em 0; }
+
+.home-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 0 10px #555;
+  border-radius: 5px; }
+  .home-summary .city-summary {
+    background: #0f393a;
+    margin: 25px;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000; }
+    .home-summary .city-summary .city-header {
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 5px; }
+    .home-summary .city-summary .motto {
+      color: #9da9a0;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 15px; }
+    .home-summary .city-summary .fact-list {
+      list-style: none;
+      padding: 0; }
+      .home-summary .city-summary .fact-list .fact {
+        color: #98e2c6;
+        text-align: center;
+        margin-bottom: 15px; }
+    .home-summary .city-summary .city-photo {
+      max-width: 100%;
+      text-align: center; }
+
+article h3 {
+  margin-bottom: 1.5em; }
+article figure.max-50 {
+  max-width: 50%; }
+article figure img {
+  max-width: 100%; }
+article p {
+  margin-bottom: 1em; }
+
 @media (max-width: 1249px) {
   main.gallery-main .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+
+  .home-summary {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center; } }
 @media (max-width: 899px) {
   /*------ Global Styles ------*/
   * {

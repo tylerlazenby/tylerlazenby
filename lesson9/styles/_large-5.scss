@@ -61,6 +61,7 @@ body {
     text-align: center;
 
     & .header-top {
+      padding-top: 2em;
       display: block;
       width: 100%;
     }
@@ -147,49 +148,6 @@ body {
   main {
     max-width: 940px;
     margin: 25px auto;
-
-    & .home-summary {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      box-shadow: 0 0 10px #555;
-      border-radius: 5px;
-
-      & .city-summary {
-        background: #0f393a;
-        margin: 25px;
-        padding: 10px;
-        border-radius: 5px;
-
-        & .city-header {
-          color: white;
-          text-align: center;
-          font-size: 2rem;
-          margin-bottom: 5px;
-        }
-
-        & .motto {
-          color: #9da9a0;
-          text-align: center;
-          font-style: italic;
-          margin-bottom: 15px;
-        }
-
-        & .fact-list {
-          list-style: none;
-          padding: 0;
-
-          & .fact {
-            color: #98e2c6;
-            text-align: center;
-            margin-bottom: 15px;
-          }
-        }
-
-        & .city-photo {
-          max-width: 100%;
-        }
-      }
-    }
 
     & .main-header {
       text-align: center;
@@ -380,5 +338,74 @@ body {
 
   .navigation li:first-child {
     display: none;
+  }
+}
+
+footer {
+  padding: 1em 0;
+}
+
+.home-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0 0 10px #555;
+  border-radius: 5px;
+
+  & .city-summary {
+    background: #0f393a;
+    margin: 25px;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+
+    & .city-header {
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    & .motto {
+      color: #9da9a0;
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    & .fact-list {
+      list-style: none;
+      padding: 0;
+
+      & .fact {
+        color: #98e2c6;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+
+    & .city-photo {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+article {
+  h3 {
+    margin-bottom: 1.5em;
+  }
+
+  figure {
+    &.max-50 {
+      max-width: 50%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  p {
+    margin-bottom: 1em;
   }
 }

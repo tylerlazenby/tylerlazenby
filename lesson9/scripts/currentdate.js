@@ -21,11 +21,14 @@ let month = [
     "July",
     "August",
     "September",
+    "October",
     "November",
-    "December"
+    "December",
 ];
 
 console.log(d);
 let dateStr = weekday[d.getDay()] + ", " + d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear();
+
+console.log(d.getMonth());
 document.getElementById("footerDate").innerHTML = dateStr;
 document.getElementById("copyrightYear").innerHTML = d.getFullYear().toString();

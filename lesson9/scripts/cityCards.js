@@ -18,6 +18,7 @@ fetch(requestURL)
             let population = document.createElement('li');
             let averageRainFall = document.createElement('li');
             let photo = document.createElement('img');
+            let townLink = document.createElement('a');
 
             // Add Classes
             card.className = 'city-summary';
@@ -35,7 +36,8 @@ fetch(requestURL)
             yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
             population.textContent = 'Population: ' + towns[i].currentPopulation;
             averageRainFall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-            photo.setAttribute('src', 'image/' + towns[i].photo);
+            townLink.setAttribute('href', towns[i].name.toLowerCase() + '-7.html');
+            photo.setAttribute('src', 'image/' +  towns[i].photo);
             photo.setAttribute('alt', towns[i].name);
 
             // Create the Fact List
@@ -43,11 +45,14 @@ fetch(requestURL)
             factList.appendChild(population);
             factList.appendChild(averageRainFall);
 
+            // Create Town Link on Photo
+            townLink.appendChild(photo);
+
             // Create Card
             card.appendChild(name);
             card.appendChild(motto);
             card.appendChild(factList);
-            card.appendChild(photo);
+            card.appendChild(townLink);
 
             // Add Card to DOM
             document.querySelector('div.home-summary').appendChild(card);
