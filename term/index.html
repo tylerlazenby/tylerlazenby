@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Term Website</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Temple Inn & Suites</title>
     <link rel="stylesheet" href="style/styles.min.css">
 </head>
 <body>
 <header>
-    <h1>Term Website</h1>
+    <div class="container">
+        <h1 class="main-heading">The Temple Inn & Suites</h1>
+    </div>
 </header>
 
 <main>
-    <div class="container">
-        <h2>Main Section</h2>
-    </div>
+    <section class="top-main">
+        <div class="container">
+            <div class="col-2">
+                <div class="col middle">
+                    <h2>Your Home Away From Home</h2>
+                    <h3>Everything You Need For Your Next Temple Visit</h3>
+                    <a href="https://tyler-lazenby.com" class="top-main-link-button">
+                        <span>Make a Reservation</span>
+                    </a>
+                </div>
+                <div class="col middle">
+                    <picture id="hotel-room">
+                        <img src="image/placeholder.jpg" alt="hotel room" data-src="image/front-hero/iStock-524152270@0,25x.jpg" class="image-shadow">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer>
@@ -21,5 +41,6 @@
         <p>Footer</p>
     </div>
 </footer>
+<script src="script/lazyload.js"></script>
 </body>
 </html>

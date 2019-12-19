@@ -1,0 +1,23 @@
+// Design Styles
+$design-font-stack: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+// Main Styles Variables
+        $colors: (
+        'primary': #c0caad, // silver
+        'accent': #9da9a0, // quick silver
+        'secondary': #bfedef, // pale turquoise
+        'foreground': #98e2c6, // sea foam green
+        'background': #545c52 // ebony
+);
+
+// RGB to Hex Conversion Variables
+$white: #fff;
+$black: #000;
+
+// Font Stacks
+$heading-font-stack: Verdana,Geneva,sans-serif;
+$heading-font-stack-2: 'Source Sans Pro',sans-serif;
+$body-font-stack: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+
+// Sizings
+$nav-item-line-height: 35px;

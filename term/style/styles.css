@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto|Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro|Tangerine&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -388,5 +389,114 @@ template {
  */
 [hidden] {
   display: none; }
+
+/*Google Font*/
+/* Regular Styles */
+html {
+  font-size: 18px; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+/* Universal Styling */
+h1 {
+  font-family: 'Source Serif Pro', sans-serif; }
+
+h2 {
+  font-family: 'Source Serif Pro', sans-serif; }
+
+h3 {
+  font-family: 'Source Serif Pro', sans-serif; }
+
+h4 {
+  font-family: 'Source Serif Pro', sans-serif; }
+
+h5 {
+  font-family: 'Source Serif Pro', sans-serif; }
+
+h6 {
+  font-family: 'Source Serif Pro', sans-serif; }
+
+header {
+  box-shadow: 0 0 2px #000;
+  padding: 0.3rem 0; }
+  header .main-heading {
+    font-family: 'Tangerine', cursive;
+    font-weight: 300;
+    text-shadow: 0 0 5px #222;
+    margin-bottom: 0; }
+
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+img {
+  max-width: 100%; }
+
+.col {
+  padding: 1rem; }
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.top-main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background: #fecc86; }
+
+.image-shadow {
+  box-shadow: 0 0 10px #000; }
+
+.top-main-link-button {
+  background: white;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  border: 3px solid #000; }
+
+/* Large Styles */
+@media (min-width: 940px) {
+  header .main-heading {
+    font-size: 2rem; }
+
+  .container {
+    max-width: 940px;
+    margin: auto; }
+
+  .top-main h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0; }
+
+  .top-main h3 {
+    font-size: 1.75rem;
+    color: #666666; } }
+/* Medium Styles */
+/* Small Styles */
+@media (max-width: 899px) {
+  .col-2 {
+    grid-template-columns: repeat(1, 1fr); }
+
+  .col-3 {
+    grid-template-columns: repeat(1, 1fr); }
+
+  .col-4 {
+    grid-template-columns: repeat(1, 1fr); } }
 
 /*# sourceMappingURL=styles.css.map */

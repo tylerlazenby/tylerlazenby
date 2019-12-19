@@ -499,5 +499,7 @@ footer {
   div.news {
     column-count: 3; } }
 /* end of media query */
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

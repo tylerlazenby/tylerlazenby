@@ -1,1 +1,96 @@
+@import "variables";
+@import "mixins";
 @import "normalize";
+
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro|Tangerine&display=swap');
+
+/* Regular Styles */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Universal Styling */
+@for $i from 1 through 6 {
+  h#{$i}{
+    font-family: 'Source Serif Pro', sans-serif;
+  }
+}
+
+header {
+  box-shadow: 0 0 2px #000;
+  padding: 0.3rem 0;
+
+  .main-heading {
+    font-family: 'Tangerine', cursive;
+    font-weight: 300;
+    text-shadow: 0 0 5px #222;
+    margin-bottom: 0;
+  }
+}
+
+@for $i from 2 through 4 {
+  .col-#{$i} {
+    display: grid;
+    grid-template-columns: repeat(#{$i}, 1fr);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.col {
+  padding: 1rem;
+  // border: solid 1px red;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background: #fecc86;
+}
+
+.image-shadow {
+  box-shadow: 0 0 10px #000;
+}
+
+.top-main-link-button {
+  background: white;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  border: 3px solid #000;
+}
+
+/* Large Styles */
+@media (min-width: 940px) {
+  @import "large";
+}
+
+/* Medium Styles */
+@media (max-width: 1249px) {
+  @import "medium";
+}
+
+/* Small Styles */
+@media (max-width: 899px)  {
+  @import "small";
+}
+

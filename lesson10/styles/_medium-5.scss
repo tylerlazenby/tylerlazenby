@@ -1,0 +1,11 @@
+@include breakpoint-medium {
+  main.gallery-main .gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-summary {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}

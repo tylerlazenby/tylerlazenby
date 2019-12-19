@@ -1,0 +1,21 @@
+header {
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+}
+
+.top-main h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.top-main h3 {
+  font-size: 1.75rem;
+  color: lighten(#000, 40);
+}
