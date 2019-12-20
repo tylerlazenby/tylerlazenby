@@ -22,14 +22,50 @@ body {
 }
 
 header {
-  box-shadow: 0 0 2px #000;
-  padding: 0.3rem 0;
+  box-shadow: 0 0 2px;
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.3rem;
+
+      .navbar {
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 0 0.3rem;
+        margin: 0;
+
+        li {
+          a {
+            padding: 0.75rem 1rem;
+            display: block;
+            text-decoration: none;
+            color: gray;
+            transition: 0.2s;
+            &:hover {
+              background: gray;
+              color: white;
+            }
+
+            &.active {
+              background: lighten(lightgrey, 10);
+              &:hover {
+                background: lighten(lightgrey, 10);
+                color: gray;
+              }
+            }
+          }
+        }
+      }
+  }
 
   .main-heading {
     font-family: 'Tangerine', cursive;
     font-weight: 300;
     text-shadow: 0 0 5px #222;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -56,11 +92,18 @@ img {
   justify-content: center;
 }
 
-.top-main {
-  padding-top: 4rem;
+.banner {
+  padding-top: 8rem;
   padding-bottom: 4rem;
   text-align: center;
   background: #fecc86;
+  background: linear-gradient(
+                  rgba(#fecc86, 0.85),
+                  rgba(#fecc86, 0.85)
+  ),
+          url("../image/temple-banner-background.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .image-shadow {
@@ -68,15 +111,41 @@ img {
 }
 
 .top-main-link-button {
-  background: white;
+  background: black;
   padding: 1rem;
   font-size: 2rem;
   border-radius: 5px;
   cursor: pointer;
-  color: #000000;
+  color: white;
   text-decoration: none;
   font-weight: 600;
   border: 3px solid #000;
+  transition: 0.2s;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
+
+.under-banner {
+  padding-top: 3rem;
+  font-size: 1.14rem;
+}
+
+.centered-heading {
+  text-align: center;
+}
+
+@for $i from 1 through 6 {
+  h#{$i}.large {
+    font-size: 3rem;
+  }
+}
+
+footer {
+  box-shadow: 0 0 2px;
+  padding: 0.3rem 0;
 }
 
 /* Large Styles */
