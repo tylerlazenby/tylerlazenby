@@ -1,0 +1,109 @@
+{
+  "temples": [
+    {
+      "name": "Rexburg Idaho Temple",
+      "address": "Address Here",
+      "city": "Rexburg",
+      "state": "ID",
+      "phone": "Phone Number Here",
+      "email": "Email Address Here",
+      "schedule": [
+        {
+          "sunday": false,
+          "monday": true,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": true,
+          "friday": true,
+          "saturday": true
+        }
+      ],
+      "timeIn": "Time In Here",
+      "timeOut": "Time Out Here",
+      "sessionSchedule": [
+          "session 1 time here",
+          "session 2 time here",
+          "session 3 time here",
+          "session 4 time here",
+          "session 5 time here"
+      ],
+      "closureDates": [
+        "Date 1",
+        "Date 2",
+        "Date 3"
+      ],
+      "summary": "Summary Text Here",
+      "photoLocation": "image/placeholder.jpg"
+    },
+    {
+      "name": "Name Here",
+      "address": "Address Here",
+      "city": "City Here",
+      "state": "State ABBREV Here",
+      "phone": "Phone Number Here",
+      "email": "Email Address Here",
+      "schedule": [
+        {
+          "sunday": false,
+          "monday": true,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": true,
+          "friday": true,
+          "saturday": true
+        }
+      ],
+      "timeIn": "Time In Here",
+      "timeOut": "Time Out Here",
+      "sessionSchedule": [
+        "session 1 time here",
+        "session 2 time here",
+        "session 3 time here",
+        "session 4 time here",
+        "session 5 time here"
+      ],
+      "closureDates": [
+        "Date 1",
+        "Date 2",
+        "Date 3"
+      ],
+      "summary": "Summary Text Here",
+      "photoLocation": "image/placeholder.jpg"
+    },
+    {
+      "name": "Name Here",
+      "address": "Address Here",
+      "city": "City Here",
+      "state": "State ABBREV Here",
+      "phone": "Phone Number Here",
+      "email": "Email Address Here",
+      "schedule": [
+        {
+          "sunday": false,
+          "monday": true,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": true,
+          "friday": true,
+          "saturday": true
+        }
+      ],
+      "timeIn": "Time In Here",
+      "timeOut": "Time Out Here",
+      "sessionSchedule": [
+        "session 1 time here",
+        "session 2 time here",
+        "session 3 time here",
+        "session 4 time here",
+        "session 5 time here"
+      ],
+      "closureDates": [
+        "Date 1",
+        "Date 2",
+        "Date 3"
+      ],
+      "summary": "Summary Text Here",
+      "photoLocation": "image/placeholder.jpg"
+    }
+  ]
+}

@@ -11,3 +11,39 @@
     grid-template-columns: repeat(#{$i}, 1fr);
   }
 }
+
+.banner {
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    color: lighten(#000, 40);
+  }
+}
+
+nav ul {
+  & .nav-elm:first-child {
+    display: block;
+  }
+  & .nav-elm {
+    display: none;
+  }
+}
+
+.responsive {
+  display: block !important;
+
+  nav ul.navbar {
+    display: block;
+
+    li {
+      text-align: center;
+      display: block;
+    }
+  }
+
+}

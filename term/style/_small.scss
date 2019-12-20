@@ -3,3 +3,58 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.col {
+  &:first-child, &:last-child {
+    margin: 0 1rem;
+  }
+}
+
+.wide-container, .bottom-links, .newsletter {
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-links .col-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer .wide-container {
+  margin: 0 1rem;
+}
+
+.container {
+  margin: 0 1rem;
+}
+
+.top-main-link-button {
+  width: 100%;
+  display: block;
+}
+
+.banner {
+  padding-bottom: 0.25rem;
+
+  img {
+    display: none;
+  }
+}
+
+.under-banner {
+  .centered-heading {
+    text-align: left;
+  }
+
+  .large {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .col {
+    margin: 0;
+  }
+
+  .stats {
+    margin-bottom: 1rem;
+  }
+}

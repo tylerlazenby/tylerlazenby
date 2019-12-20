@@ -1,10 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/869eff2dce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/styles.min.css">
 </head>
 <body>
+<header class="fixed-top">
+    <div class="container">
+        <div class="main-header">
+            <h1 class="main-heading"><a href="index.html">The Temple Inn & Suites</a></h1>
+            <nav>
+                <ul class="navbar nav-elements">
+                    <li class="nav-elm"><a class="icon" href="#" onclick="return toggleNav()">
+                        Menu &#9776;
+                    </a></li>
+                    <li class="nav-elm"><a href="index.html">Home</a></li>
+                    <li class="nav-elm"><a href="temple.html">Temple Information</a></li>
+                    <li class="nav-elm"><a href="reservation.html">Make a Reservation</a></li>
+                    <li class="nav-elm"><a class="active" href="services.html">Services</a></li>
+                    <li class="nav-elm"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header><!--Header Included on All Pages-->
 
+
+<section class="newsletter" id="newsletter">
+    <div class="wide-container">
+        <div class="col-2">
+            <div class="col">
+                <h2 class="large">Sign Up For Our Newsletter</h2>
+                <p>We offer the greatest deals to our subscribers. In addition, you will get monthly spiritual thoughts and study ideas. And as a special bonus each month we have a drawing for our subscribers for great prizes like free stays and local deals for your favorite attractions.</p>
+            </div>
+            <div class="col">
+                <form action="">
+                    <div class="input-group">
+                        <label for="first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
+                        <input id="first_name" type="text" placeholder="First Name" name="first_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
+                        <input id="last_name" type="text" placeholder="Last Name" name="last_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
+                        <input id="email" type="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="block large btn submit-btn">Sign Up Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bottom-links" id="bottom-links">
+    <div class="wide-container">
+        <div class="col-4">
+            <div class="col">
+                <h4>About Us</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Our Vision</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="contact.html">Contact Us</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Terms and Conditions</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Locations</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Rexburg, ID</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Boise, ID</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Twin Falls, ID</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Salt Lake City, UT</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Church Resources</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/">Church Website</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.comeuntochrist.org/">Come Unto Christ</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://newsroom.churchofjesuschrist.org/">Church Newsroom</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.youtube.com/user/MormonMessages">Church Channel</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Temple Resources</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://store.churchofjesuschrist.org/">Church Store</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples?lang=eng">Learn About Temples</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples/list?lang=eng">All Temples</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wide-container">
+        <p>&copy; <span id="footerYear"></span> Tyler Lazenby | The Temple Inn and Suites is a Fictional Company. Any Similarity to Existing Businesses is Purely Coincidental</p>
+    </div>
+</footer>
+<script src="script/navMenu.js"></script>
+<script src="script/lazyload.js"></script>
+<script src="script/footer-info.js"></script>
 </body>
 </html>

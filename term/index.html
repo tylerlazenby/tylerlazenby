@@ -14,13 +14,18 @@
     <div class="container">
         <div class="main-header">
             <h1 class="main-heading"><a href="index.html">The Temple Inn & Suites</a></h1>
-            <ul class="navbar">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="temple.html">Temple Information</a></li>
-                <li><a href="reservation.html">Make a Reservation</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <nav>
+                <ul class="navbar nav-elements">
+                    <li class="nav-elm"><a class="icon" href="#" onclick="return toggleNav()">
+                        Menu &#9776;
+                    </a></li>
+                    <li class="nav-elm"><a class="active" href="index.html">Home</a></li>
+                    <li class="nav-elm"><a href="temple.html">Temple Information</a></li>
+                    <li class="nav-elm"><a href="reservation.html">Make a Reservation</a></li>
+                    <li class="nav-elm"><a href="services.html">Services</a></li>
+                    <li class="nav-elm"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header><!--Header Included on All Pages-->
@@ -125,43 +130,43 @@
         </div>
     </div>
 </section>
-<section class="bottom-links">
+<section class="bottom-links" id="bottom-links">
     <div class="wide-container">
         <div class="col-4">
             <div class="col">
-                <h4>Learn More About The Church</h4>
+                <h4>About Us</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Our Vision</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="contact.html">Contact Us</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Terms and Conditions</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Locations</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Rexburg, ID</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Boise, ID</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Twin Falls, ID</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#bottom-links">Salt Lake City, UT</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Church Resources</h4>
                 <ul class="no-bullet">
                     <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/">Church Website</a></li>
                     <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.comeuntochrist.org/">Come Unto Christ</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://newsroom.churchofjesuschrist.org/">Newsroom</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://newsroom.churchofjesuschrist.org/">Church Newsroom</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.youtube.com/user/MormonMessages">Church Channel</a></li>
                 </ul>
             </div>
             <div class="col">
-                <h4>Heading 1</h4>
+                <h4>Temple Resources</h4>
                 <ul class="no-bullet">
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h4>Heading 1</h4>
-                <ul class="no-bullet">
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h4>Heading 1</h4>
-                <ul class="no-bullet">
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://store.churchofjesuschrist.org/">Church Store</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples?lang=eng">Learn About Temples</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples/list?lang=eng">All Temples</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng">Gallery</a></li>
                 </ul>
             </div>
         </div>
@@ -172,8 +177,10 @@
         <p>&copy; <span id="footerYear"></span> Tyler Lazenby | The Temple Inn and Suites is a Fictional Company. Any Similarity to Existing Businesses is Purely Coincidental</p>
     </div>
 </footer>
+<script src="script/navMenu.js"></script>
 <script src="script/lazyload.js"></script>
-<script src="script/rexburg-data.js"></script>
 <script src="script/footer-info.js"></script>
+
+<script src="script/rexburg-data.js"></script>
 </body>
 </html>

@@ -141,6 +141,7 @@ header {
       font-size: 0.5rem;
     }
   }
+
   input[type="text"], input[type="email"] {
     display: block;
     max-width: 100%;
@@ -269,7 +270,7 @@ img {
       padding-left: 0;
 
       li {
-        margin-bottom:  0.5rem;
+        margin-bottom: 0.5rem;
       }
     }
   }
@@ -307,6 +308,13 @@ img {
 .wide-container {
   margin: 0 3rem;
 }
+
+nav ul {
+  & .nav-elm:first-child {
+    display: none;
+  }
+}
+
 @for $i from 1 through 6 {
   h#{$i}.large {
     font-size: 3rem;
