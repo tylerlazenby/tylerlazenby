@@ -1,0 +1,13 @@
+.container {
+  padding: 0.5rem 0;
+}
+
+.top-main-link-button {
+  font-size: 1.15rem;
+}
+
+@for $i from 2 through 4 {
+  .col-#{$i} {
+    grid-template-columns: repeat(#{$i}, 1fr);
+  }
+}

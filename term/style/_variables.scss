@@ -1,15 +1,4 @@
-@function theme-color($key: 'primary') {
-  @return map-get($colors, $key);
-}
-
-@mixin breakpoint-small {
-  @media (max-width: 899px) {@content;}
-}
-
-@mixin breakpoint-medium {
-  @media (max-width: 1249px) {@content;}
-}
-
-@mixin breakpoint-large {
-  @media (min-width: 940px) {@content;}
-}
+$san-serif: 'Source Sans Pro', sans-serif;
+$serif: 'Source Serif Pro', serif;
+$logo-family: 'Tangerine', cursive;
+$default-filler-padding: 0.3rem;

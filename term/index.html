@@ -6,23 +6,24 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Temple Inn & Suites</title>
+    <script src="https://kit.fontawesome.com/869eff2dce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/styles.min.css">
 </head>
 <body>
-<header>
+<header class="fixed-top">
     <div class="container">
         <div class="main-header">
-            <h1 class="main-heading">The Temple Inn & Suites</h1>
+            <h1 class="main-heading"><a href="index.html">The Temple Inn & Suites</a></h1>
             <ul class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Temple Information</a></li>
-                <li><a href="#">Make a Reservation</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="temple.html">Temple Information</a></li>
+                <li><a href="reservation.html">Make a Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
-</header>
+</header><!--Header Included on All Pages-->
 
 <section class="banner">
     <div class="container">
@@ -30,7 +31,7 @@
             <div class="col middle">
                 <h2>Your Home Away From Home</h2>
                 <h3>Everything You Need For Your Next Temple Visit</h3>
-                <a href="https://tyler-lazenby.com" class="top-main-link-button">
+                <a href="reservation.html" class="top-main-link-button">
                     <span>Make a Reservation</span>
                 </a>
             </div>
@@ -48,32 +49,131 @@
         <h2 class="centered-heading large">New Location in Rexburg Idaho</h2>
         <div class="col-2">
             <div class="col">
-                <p>This lovely small town has grown especially quickly over the past two decades. And with the addition of the new Rexburg Idaho temple, it was only a matter of time before this new location sprung up. This spacious inn has twelve rooms, with six of them equipped with queen sized beds, and the others with full king sized beds.</p>
+                <p>This lovely small town has grown especially quickly over the past two decades. And with the addition of the new Rexburg Idaho temple, it was only a matter of time before this new location sprung up. When you enter, you will immediately begin your temple experience with our quiet and temple themed entrance. This spacious inn has twelve rooms, with six of them equipped with queen sized beds, and the others with full king sized beds.</p>
+                <div class="stats">
+                    <h3>Rexburg Idaho Temple Info</h3>
+                    <div id="rexburg-summary"></div>
+                </div>
             </div>
-            <div class="col">
+            <div class="col middle">
                 <picture id="new-rexburg-location">
                     <img src="image/placeholder.jpg" alt="new rexburg location" data-src="image/new-rexburg-location.jpg">
                 </picture>
+                <p class="picture-caption">The New Rexburg House Blends Nicely With the Community</p>
+            </div>
+        </div>
+    </div>
+    <div class="separated-card shadowed-card">
+        <div class="container">
+            <h2 class="centered-heading">What to Expect</h2>
+            <p>You will love your stay at any of our inns. The lovely kitchenette suites are designed so that you can get ready with as little worry as possible. Speaking of worries, you no longer need to worry about the little ones. Playrooms are supervised during regular business hours and are open to all customers at a very low fee. For those entering into the eternal covenant of marriage, we have a lovely area specifically made for wedding receptions, featuring simple but elegant catering menu and kitchen staff. And while you stay, make sure to get some family history research done in our state of the art family search center.</p>
+            
+            <div class="col-2">
+                <div class="col">
+                    <h3>Special Services</h3>
+                    <ul class="list-with-room check-style">
+                        <li><i class="fas fa-check list-icon-spacer"></i>Changing Rooms and Bathroom Facilities Available to All Temple Patrons</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Low Cost, Short Term Child Care in Our Lovely Playrooms</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Luxurious Suites with Kitchenette Designed Specifically For Full-Time Temple Missionaries</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Temple Themed Entrance with Scripture Reading Area</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Wedding Reception Hall With Catering Services</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>State of the Art Family History Research Center</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Regular Amenities</h3>
+                    <ul class="list-with-room check-style">
+                        <li><i class="fas fa-check list-icon-spacer"></i>Complimentary Breakfast</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Exercise/Workout Room</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>WiFi high-speed Internet Access and Smart TVs</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Large Parking Lot</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Temple Shuttle</li>
+                        <li><i class="fas fa-check list-icon-spacer"></i>Family History Consultation and Family Ordinance Card Services</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </main>
 
-<section class="newsletter">
-    <div class="container">
-        <p>newsletter</p>
+<section class="newsletter" id="newsletter">
+    <div class="wide-container">
+        <div class="col-2">
+            <div class="col">
+                <h2 class="large">Sign Up For Our Newsletter</h2>
+                <p>We offer the greatest deals to our subscribers. In addition, you will get monthly spiritual thoughts and study ideas. And as a special bonus each month we have a drawing for our subscribers for great prizes like free stays and local deals for your favorite attractions.</p>
+            </div>
+            <div class="col">
+                <form action="">
+                    <div class="input-group">
+                        <label for="first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
+                        <input id="first_name" type="text" placeholder="First Name" name="first_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
+                        <input id="last_name" type="text" placeholder="Last Name" name="last_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
+                        <input id="email" type="email" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="block large btn submit-btn">Sign Up Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 <section class="bottom-links">
-    <div class="container">
-        <p>Links</p>
+    <div class="wide-container">
+        <div class="col-4">
+            <div class="col">
+                <h4>Learn More About The Church</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/">Church Website</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.comeuntochrist.org/">Come Unto Christ</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://newsroom.churchofjesuschrist.org/">Newsroom</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Heading 1</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Heading 1</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Heading 1</h4>
+                <ul class="no-bullet">
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="#">Link Text</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 <footer>
-    <div class="container">
-        <p>&copy; 2019 The Temple Inn & Suites</p>
+    <div class="wide-container">
+        <p>&copy; <span id="footerYear"></span> Tyler Lazenby | The Temple Inn and Suites is a Fictional Company. Any Similarity to Existing Businesses is Purely Coincidental</p>
     </div>
 </footer>
 <script src="script/lazyload.js"></script>
+<script src="script/rexburg-data.js"></script>
+<script src="script/footer-info.js"></script>
 </body>
 </html>
