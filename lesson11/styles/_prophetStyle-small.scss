@@ -1,0 +1,11 @@
+@media (max-width: 899px) {
+  header {
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 0.25rem;
+  }
+}
