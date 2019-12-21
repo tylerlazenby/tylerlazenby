@@ -21,6 +21,10 @@ body {
   }
 }
 
+main {
+  padding: 1rem;
+}
+
 header {
   box-shadow: 0 0 4px;
 
@@ -28,6 +32,7 @@ header {
     position: fixed;
     background: white;
     width: 100%;
+    top: 0;
   }
 
   .main-header {
@@ -307,6 +312,52 @@ img {
 
 .wide-container {
   margin: 0 3rem;
+}
+
+/*Temple Specific Styles*/
+.temple-info {
+  & > :not(:last-child) {
+    border-bottom: 1px solid #777;
+  }
+
+  .address {
+    margin-bottom: 1rem;
+    p {
+      line-height: 0;
+      font-style: italic;
+    }
+  }
+
+  .phone {
+    &:before {
+      font-weight: bold;
+      content: "Phone: ";
+    }
+  }
+
+  .email {
+    &:before {
+      font-weight: bold;
+      content: "Email Address: ";
+    }
+  }
+
+  .openClose {
+    &:before {
+      font-weight: bold;
+      content: "Regular Schedule: ";
+    }
+  }
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  .sessionSchedule, .closureSchedule {
+    p {
+      margin: 0;
+    }
+  }
 }
 
 nav ul {

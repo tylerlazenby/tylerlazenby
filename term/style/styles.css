@@ -417,12 +417,16 @@ h5 {
 h6 {
   font-family: "Source Serif Pro", serif; }
 
+main {
+  padding: 1rem; }
+
 header {
   box-shadow: 0 0 4px; }
   header.fixed-top {
     position: fixed;
     background: white;
-    width: 100%; }
+    width: 100%;
+    top: 0; }
   header .main-header {
     display: flex;
     justify-content: space-between;
@@ -620,6 +624,28 @@ img {
 .wide-container {
   margin: 0 3rem; }
 
+/*Temple Specific Styles*/
+.temple-info > :not(:last-child) {
+  border-bottom: 1px solid #777; }
+.temple-info .address {
+  margin-bottom: 1rem; }
+  .temple-info .address p {
+    line-height: 0;
+    font-style: italic; }
+.temple-info .phone:before {
+  font-weight: bold;
+  content: "Phone: "; }
+.temple-info .email:before {
+  font-weight: bold;
+  content: "Email Address: "; }
+.temple-info .openClose:before {
+  font-weight: bold;
+  content: "Regular Schedule: "; }
+.temple-info h4 {
+  margin-bottom: 0; }
+.temple-info .sessionSchedule p, .temple-info .closureSchedule p {
+  margin: 0; }
+
 nav ul .nav-elm:first-child {
   display: none; }
 
@@ -744,6 +770,9 @@ footer {
   .under-banner .col {
     margin: 0; }
   .under-banner .stats {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+
+  .temple-info .col-2 .col:last-child {
+    margin-top: 1rem; } }
 
 /*# sourceMappingURL=styles.css.map */

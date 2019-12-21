@@ -2,11 +2,12 @@
   "temples": [
     {
       "name": "Rexburg Idaho Temple",
-      "address": "Address Here",
+      "address": "750 S 2nd E",
       "city": "Rexburg",
       "state": "ID",
-      "phone": "Phone Number Here",
-      "email": "Email Address Here",
+      "zip": "83440",
+      "phone": "(208) 656-0880",
+      "email": "notfound@ldschurch.com",
       "schedule": [
         {
           "sunday": false,
@@ -18,30 +19,52 @@
           "saturday": true
         }
       ],
-      "timeIn": "Time In Here",
-      "timeOut": "Time Out Here",
+      "timeIn": "6:00 AM",
+      "timeOut": "8:00 PM",
       "sessionSchedule": [
-          "session 1 time here",
-          "session 2 time here",
-          "session 3 time here",
-          "session 4 time here",
-          "session 5 time here"
+          "6:00 AM - Walk-ins Only",
+          "7:30 AM - Walk-ins Only",
+          "8:15 AM - Walk-ins and Appointments",
+          "9:00 AM - Walk-ins and Appointments",
+          "9:45 AM - Walk-ins Only",
+          "10:30 AM - Walk-ins Only",
+          "11:15 AM - Walk-ins Only",
+          "12:00 PM - Walk-ins Only",
+          "12:45 PM - Walk-ins Only",
+          "1:30 PM - Walk-ins Only",
+          "2:15 PM - Walk-ins Only",
+          "3:00 PM - Walk-ins and Appointments",
+          "3:45 PM - Walk-ins Only",
+          "4:30 PM - Walk-ins Only",
+          "5:15 PM - Walk-ins and Appointments",
+          "6:00 PM - Walk-ins Only",
+          "6:45 PM - Walk-ins Only",
+          "7:30 PM - Walk-ins and Appointments"
       ],
       "closureDates": [
-        "Date 1",
-        "Date 2",
-        "Date 3"
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019 - Wednesday, 1 January 2020,",
+        "Saturday, 4 April 2020",
+        "Monday, 13 April 2020 - Monday, 27 April 2020",
+        "Saturday, 4 July 2020",
+        "Saturday, 25 July 2020",
+        "Monday, 24 August 2020 - Monday, 14 September 2020",
+        "Saturday, 3 October 2020",
+        "Wednesday, 25 November 2020 - Thursday, 26 November 2020",
+        "Thursday, 24 December 2020 - Friday, 25 December 2020",
+        "Thursday, 31 December 2020 - Friday, 1 January 2021"
       ],
-      "summary": "Summary Text Here",
-      "photoLocation": "image/placeholder.jpg"
+      "summary": "The Rexburg Idaho Temple is the 125th operating temple of The Church of Jesus Christ of Latter-day Saints (LDS Church). Announced in late 2003, the temple was dedicated on February 10, 2008 and was the first temple dedicated by Thomas S. Monson as the church's new president. - Credit Wikipedia",
+      "photoLocation": "image/temples/rexburg.jpg"
     },
     {
-      "name": "Name Here",
-      "address": "Address Here",
-      "city": "City Here",
-      "state": "State ABBREV Here",
-      "phone": "Phone Number Here",
-      "email": "Email Address Here",
+      "name": "Boise Idaho Temple",
+      "address": "1211 S Cole Ro",
+      "city": "Boise",
+      "state": "ID",
+      "zip": "83709",
+      "phone": "(208) 322-4422",
+      "email": "hidden@ldschurch.com",
       "schedule": [
         {
           "sunday": false,
@@ -53,30 +76,65 @@
           "saturday": true
         }
       ],
-      "timeIn": "Time In Here",
-      "timeOut": "Time Out Here",
+      "timeIn": "5:30 AM",
+      "timeOut": "9:00 PM",
       "sessionSchedule": [
-        "session 1 time here",
-        "session 2 time here",
-        "session 3 time here",
-        "session 4 time here",
-        "session 5 time here"
+        "5:30 AM - Walk-ins Only",
+        "6:00 AM - Walk-ins Only",
+        "6:30 AM - Walk-ins Only",
+        "7:00 AM - Walk-ins Only",
+        "7:30 AM - Walk-ins Only",
+        "8:00 AM - Walk-ins Only",
+        "8:30 AM - Walk-ins Only",
+        "9:00 AM - Walk-ins Only",
+        "9:30 AM - Walk-ins Only",
+        "10:00 AM - Walk-ins Only",
+        "10:30 AM - Walk-ins Only",
+        "11:00 AM - Walk-ins Only",
+        "12:00 PM - Walk-ins Only",
+        "12:30 PM - Walk-ins Only",
+        "1:00 PM - Walk-ins Only",
+        "1:30 PM - Walk-ins Only",
+        "2:00 PM - Walk-ins Only",
+        "2:30 PM - Walk-ins Only",
+        "3:00 PM - Walk-ins Only",
+        "3:30 PM - Walk-ins Only",
+        "4:00 PM - Walk-ins Only",
+        "4:30 PM - Walk-ins Only",
+        "5:00 PM - Walk-ins Only",
+        "5:30 PM - Walk-ins Only",
+        "6:00 PM - Walk-ins Only",
+        "6:30 PM - Walk-ins Only",
+        "7:00 PM - Walk-ins Only",
+        "7:30 PM - Walk-ins Only",
+        "8:00 PM - Walk-ins Only"
       ],
       "closureDates": [
-        "Date 1",
-        "Date 2",
-        "Date 3"
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019",
+        "Tuesday, 31 December 2019 (Limited Hours)",
+        "Wednesday, 1 January 2020",
+        "Saturday, 4 April 2020",
+        "Monday, 20 April 2020 - Monday, 4 May 2020",
+        "Saturday, 4 July 2020",
+        "Saturday, 3 October 2020",
+        "Monday, 12 October 2020 - Monday, 26 October 2020",
+        "Wednesday, 25 November 2020 (Limited Hours)",
+        "Thursday, 26 November 2020",
+        "Thursday, 24 December 2020 - Friday, 25 December 2020",
+        "Thursday, 31 December 2020 (Limited Hours)"
       ],
-      "summary": "Summary Text Here",
-      "photoLocation": "image/placeholder.jpg"
+      "summary": "For travelers on Interstate 84, the Boise Idaho Temple is a landmark that cannot be missed. Positioned at the I-84 Cole Road Exit, the temple is characterized by its light granite exterior, large sloping roof, and six soaring spires. Adjacent to the north is a meetinghouse. - Credit Wikipedia",
+      "photoLocation": "image/temples/boise.jpg"
     },
     {
-      "name": "Name Here",
-      "address": "Address Here",
-      "city": "City Here",
-      "state": "State ABBREV Here",
-      "phone": "Phone Number Here",
-      "email": "Email Address Here",
+      "name": "Twin Falls Idaho Temple",
+      "address": "1405 Eastland Dr N",
+      "city": "Twin Falls",
+      "state": "ID",
+      "zip": "83301",
+      "phone": "(208) 736-7070",
+      "email": "hidden@ldschurch.com",
       "schedule": [
         {
           "sunday": false,
@@ -88,22 +146,81 @@
           "saturday": true
         }
       ],
-      "timeIn": "Time In Here",
-      "timeOut": "Time Out Here",
+      "timeIn": "6:00 AM",
+      "timeOut": "8:00 PM",
       "sessionSchedule": [
-        "session 1 time here",
-        "session 2 time here",
-        "session 3 time here",
-        "session 4 time here",
-        "session 5 time here"
+        "7:00 AM - Walk-ins Only",
+        "9:00 AM- Walk-ins Only",
+        "11:00 AM - Walk-ins Only",
+        "1:00 PM - Walk-ins Only",
+        "3:00 PM - Walk-ins Only",
+        "5:00 PM - Walk-ins Only",
+        "7:00 PM - Walk-ins Only"
       ],
       "closureDates": [
-        "Date 1",
-        "Date 2",
-        "Date 3"
+        "Tuesday, 24 December 2019",
+        "Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019",
+        "Wednesday, 1 January 2020",
+        "Monday, 13 January 2020 - Monday, 27 January 2020",
+        "Saturday, 4 April 2020",
+        "Monday, 8 June 2020 - Monday, 22 June 2020",
+        "Saturday, 4 July 2020",
+        "Saturday, 3 October 2020",
+        "Wednesday, 25 November 2020 (Limited Hours)",
+        "Thursday, 26 November 2020",
+        "Thursday, 24 December 2020",
+        "Friday, 25 December 2020",
+        "Thursday, 31 December 2020"
       ],
-      "summary": "Summary Text Here",
-      "photoLocation": "image/placeholder.jpg"
+      "summary": "The exterior walls of the Twin Falls Idaho Temple are made of 282 precast concrete panels with a quartz rock finish (mined in Washington state) that weigh up to 30 tons. Ten thousand more visitors than anticipated toured the Twin Falls Idaho Temple during its five-week public open house for a total of 159,863. - Credit Wikipedia",
+      "photoLocation": "image/temples/twinFalls.jpg"
+    },
+    {
+      "name": "Salt Lake City Temple",
+      "address": "50 W North Temple St",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "zip": "84150",
+      "phone": "(801) 240-2640",
+      "email": "hidden@ldschurch.com",
+      "schedule": [
+        {
+          "sunday": false,
+          "monday": true,
+          "tuesday": true,
+          "wednesday": true,
+          "thursday": true,
+          "friday": true,
+          "saturday": true
+        }
+      ],
+      "timeIn": "6:00 AM",
+      "timeOut": "8:00 PM",
+      "sessionSchedule": [
+        "6:00 AM - Walk-ins Only",
+        "7:00 AM - Walk-ins Only",
+        "8:00 AM - Walk-ins Only",
+        "9:00 AM - Walk-ins and Appointments",
+        "10:00 AM - Walk-ins Only",
+        "11:00 AM - Walk-ins Only",
+        "12:00 PM - Walk-ins Only",
+        "1:00 PM - Walk-ins and Appointments",
+        "2:00 PM - Walk-ins Only",
+        "3:00 PM - Walk-ins Only",
+        "4:00 PM - Walk-ins Only",
+        "5:00 PM - Walk-ins Only",
+        "6:00 PM - Walk-ins and Appointments",
+        "7:00 PM - Walk-ins Only"
+      ],
+      "closureDates": [
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019",
+        "The temple will be closed for renovation starting Sunday, 29 December 2019"
+
+      ],
+      "summary": "The largest LDS temple by floor area. Dedicated in 1893, it is the sixth temple completed by the church, requiring 40 years to complete, and the fourth temple built since the Mormon exodus from Nauvoo, Illinois, in 1846.[1] On April 19, 2019 the LDS Church announced that the temple will close on December 29, 2019 for renovations that are anticipated to take approximately four years. - Credit Wikipedia",
+      "photoLocation": "image/temples/saltLakeCity.jpg"
     }
   ]
 }
