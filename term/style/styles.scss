@@ -399,6 +399,33 @@ nav ul {
   }
 }
 
+.breadcrumbs {
+  a {
+    text-decoration: none;
+    color: darkblue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.flex-form-group {
+  display: flex;
+
+  .input-group {
+    margin: 0 0.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 @for $i from 1 through 6 {
   h#{$i}.large {
     font-size: 3rem;

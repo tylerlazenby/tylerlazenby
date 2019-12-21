@@ -34,23 +34,34 @@
     <div class="container">
         <h2 class="large">Make a Reservation</h2>
         <div class="col-2">
+            <div class="col middle">
+                <picture>
+                    <img src="image/placeholder.jpg" alt="reservation-bell" data-src="image/bell.jpg">
+                </picture>
+                <p class="large-paragraph">In order to start the reservation process, we will need your most basic contact information. That way we can keep in touch with you and get all the information that we need to finish making your reservation. Payment information will be collect over the phone. <span class="bolded">Do not trust emails that ask for payment information to be sent via email.</span></p>
+                <p class="large-paragraph">Once your reservation is set, make sure to look for your confirmation in your email. If you have any questions or concerns, make sure to call us at (208) 122-3321.</p>
+            </div>
             <div class="col">
                 <form action="">
-                    <div class="input-group">
-                        <label for="r_first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="r_first_name" class="main-input" type="text" name="first_name" required>
+                    <div class="flex-form-group">
+                        <div class="input-group">
+                            <label for="r_first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
+                            <input id="r_first_name" class="main-input" type="text" name="first_name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="r_last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
+                            <input id="r_last_name" class="main-input" type="text" name="last_name" required>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="r_last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="r_last_name" class="main-input" type="text" name="last_name" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="r_email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="r_email" class="main-input" type="email" name="email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="r_home">Home State or Country<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="r_home" class="main-input" type="text" name="home" required>
+                    <div class="flex-form-group">
+                        <div class="input-group">
+                            <label for="r_email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
+                            <input id="r_email" class="main-input" type="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="r_home">Home State or Country<i class="fas fa-asterisk required-icon"></i></label>
+                            <input id="r_home" class="main-input" type="text" name="home" required>
+                        </div>
                     </div>
                     <div class="input-group">
                         <label for="r_phone">Phone Number<i class="fas fa-asterisk required-icon"></i></label>
@@ -64,13 +75,6 @@
                         <button type="submit" class="btn submit-btn large block">Make Your Reservation</button>
                     </div>
                 </form>
-            </div>
-            <div class="col middle">
-                <picture>
-                    <img src="image/placeholder.jpg" alt="reservation-bell" data-src="image/bell.jpg">
-                </picture>
-                <p class="large-paragraph">In order to start the reservation process, we will need your most basic contact information. That way we can keep in touch with you and get all the information that we need to finish making your reservation. Payment information will be collect over the phone. <span class="bolded">Do not trust emails that ask for payment information to be sent via email.</span></p>
-                <p class="large-paragraph">Once your reservation is set, make sure to look for your confirmation in your email. If you have any questions or concerns, make sure to call us at (208) 122-3321.</p>
             </div>
         </div>
     </div>
