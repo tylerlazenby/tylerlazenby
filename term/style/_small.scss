@@ -17,6 +17,14 @@
 
 .bottom-links .col-4 {
   grid-template-columns: repeat(2, 1fr);
+
+  & > * {
+    margin: 1rem;
+  }
+}
+
+.newsletter .col-2 .col:last-child {
+  margin: 0 1rem;
 }
 
 footer .wide-container {

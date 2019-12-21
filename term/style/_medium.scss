@@ -45,5 +45,22 @@ nav ul {
       display: block;
     }
   }
+}
 
+.newsletter {
+  .col-2 {
+    grid-template-columns: repeat(1, 1fr);
+
+    & .col:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.bottom-links .col-4 {
+  grid-template-columns: repeat(2, 1fr);
+
+  & > * {
+    margin: 1rem;
+  }
 }
