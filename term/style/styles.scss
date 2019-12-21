@@ -147,7 +147,7 @@ header {
     }
   }
 
-  input[type="text"], input[type="email"] {
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
     display: block;
     max-width: 100%;
     width: 100%;
@@ -156,6 +156,10 @@ header {
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
+
+    &.main-input {
+      border: 1px solid #000;
+    }
   }
 
   button {
@@ -191,6 +195,13 @@ header {
   }
 }
 
+.bolded {
+  font-weight: bold;
+}
+
+.large-paragraph {
+  font-size: 1.15rem;
+}
 
 @for $i from 2 through 4 {
   .col-#{$i} {

@@ -500,7 +500,7 @@ header {
       color: darkred;
       vertical-align: super;
       font-size: 0.5rem; }
-  .input-group input[type="text"], .input-group input[type="email"] {
+  .input-group input[type="text"], .input-group input[type="email"], .input-group input[type="tel"], .input-group textarea {
     display: block;
     max-width: 100%;
     width: 100%;
@@ -509,6 +509,8 @@ header {
     border-radius: 5px;
     border: none;
     box-sizing: border-box; }
+    .input-group input[type="text"].main-input, .input-group input[type="email"].main-input, .input-group input[type="tel"].main-input, .input-group textarea.main-input {
+      border: 1px solid #000; }
   .input-group button.btn {
     cursor: pointer;
     font-size: 1rem;
@@ -529,6 +531,12 @@ header {
   .input-group button.block {
     display: block;
     width: 100%; }
+
+.bolded {
+  font-weight: bold; }
+
+.large-paragraph {
+  font-size: 1.15rem; }
 
 .col-2 {
   display: grid;
