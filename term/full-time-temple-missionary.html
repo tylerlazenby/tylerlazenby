@@ -30,17 +30,50 @@
     </div>
 </header><!--Header Included on All Pages-->
 
-<main>
+<main class="m-bottom-spacer">
     <div class="container">
         <nav class="breadcrumbs">
             <p><a href="services.html">Services</a> &raquo; Missionary Accommodations</p>
         </nav>
         <h2>Missionary Accommodations</h2>
-        <p class="large-paragraph">Extra care is taken when we have a full time temple missionary as a guest. With over a decade of experience we can anticipate most common of the needs for you and your companion. When there is a new request, it is reviewed immediately. This is why we have this special form just for you. Whether you are preparing for your temple visit or already are checked in, you can contact us 24/7 and we will quickly respond.</p>
-        <form class="flex-form" action="">
+        <div class="col-2 m-bottom-spacer">
+            <div class="col">
+                <h3>Get a Hold of Us</h3>
+                <p class="large-paragraph">Extra care is taken when we have a full time temple missionary as a guest. With over a decade of experience we can anticipate most common of the needs for you and your companion. When there is a new request, it is reviewed immediately. This is why we have this special form just for you. Whether you are preparing for your temple visit or already are checked in, you can contact us 24/7 and we will quickly respond. Let us help make sure your stay is almost as special as your visit to the temple!</p>
+            </div>
+            <div class="col">
+                <picture>
+                    <img src="image/placeholder.jpg" alt="missionary accommodations" data-src="image/missionary.jpg">
+                </picture>
+            </div>
+        </div>
+        <form action="">
+            <div class="flex-form-group">
+                <div class="input-group">
+                    <label for="m_first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
+                    <input id="m_first_name" type="text" class="main-input" name="first_name" required>
+                </div>
+                <div class="input-group">
+                    <label for="m_last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
+                    <input id="m_last_name" type="text" class="main-input" name="last_name" required>
+                </div>
+            </div>
+            <div class="flex-form-group">
+                <div class="input-group">
+                    <label for="m_email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
+                    <input id="m_email" type="email" class="main-input" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="m_phone">Phone Number<i class="fas fa-asterisk required-icon"></i></label>
+                    <input id="m_phone" type="tel" class="main-input" name="phone" required>
+                </div>
+            </div>
             <div class="input-group">
-                <label for="m_first_name">First Name</label>
-                <input id="m_first_name" type="text" class="main-input" required>
+                <label for="m_message">Message For Us<i class="fas fa-asterisk required-icon"></i></label>
+                <textarea name="message" id="m_message" rows="5" class="main-input" required></textarea>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="large btn submit-btn">Send Message</button>
             </div>
         </form>
     </div>

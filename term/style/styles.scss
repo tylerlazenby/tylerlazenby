@@ -412,6 +412,11 @@ nav ul {
 
 .flex-form-group {
   display: flex;
+  margin-bottom: 1rem;
+
+  & > * {
+    flex: 1;
+  }
 
   .input-group {
     margin: 0 0.5rem;
@@ -424,6 +429,10 @@ nav ul {
       margin-right: 0;
     }
   }
+}
+
+.m-bottom-spacer {
+  margin-bottom: 3rem;
 }
 
 @for $i from 1 through 6 {

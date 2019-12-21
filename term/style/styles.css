@@ -681,13 +681,19 @@ nav ul .nav-elm:first-child {
     text-decoration: underline; }
 
 .flex-form-group {
-  display: flex; }
+  display: flex;
+  margin-bottom: 1rem; }
+  .flex-form-group > * {
+    flex: 1; }
   .flex-form-group .input-group {
     margin: 0 0.5rem; }
     .flex-form-group .input-group:first-child {
       margin-left: 0; }
     .flex-form-group .input-group:last-child {
       margin-right: 0; }
+
+.m-bottom-spacer {
+  margin-bottom: 3rem; }
 
 h1.large {
   font-size: 3rem; }
