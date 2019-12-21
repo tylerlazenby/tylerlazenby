@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>The Temple Inn & Suites &raquo; Contact Info</title>
-    <script src="https://kit.fontawesome.com/869eff2dce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/styles.min.css">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/869eff2dce.js"></script>
+    <link href="style/styles.min.css" rel="stylesheet">
 </head>
 <body>
 <header class="fixed-top">
@@ -30,9 +30,49 @@
     </div>
 </header><!--Header Included on All Pages-->
 
-<main>
+<main class="m-bottom-spacer">
     <div class="container">
         <h2 class="large">Contact Information</h2>
+        <div class="col-2">
+            <div class="col">
+                <h3>Main Office Address</h3>
+                <address>
+                    4800 Montgomery Ln #300<br>
+                    Bethesda, MD 20814
+                </address>
+
+                <h3>Phone Number</h3>
+                <p>(208) 122-3321</p>
+            </div>
+            <div class="col">
+                <iframe allowfullscreen=""
+                        height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028556!2d-77.0977204844408!3d38.983255949483194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576902148835!5m2!1sen!2sus" style="border:0;" width="100%"></iframe>
+            </div>
+        </div>
+        <h3>Send Us an Email</h3>
+        <form action="">
+            <div class="flex-form-group">
+                <div class="input-group">
+                    <label for="m_first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
+                    <input id="m_first_name" type="text" class="main-input" name="first_name" required>
+                </div>
+                <div class="input-group">
+                    <label for="m_last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
+                    <input id="m_last_name" type="text" class="main-input" name="last_name" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="m_email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
+                <input id="m_email" type="email" class="main-input" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="m_message">Message</label>
+                <textarea name="message" id="m_message" rows="5" class="main-input"></textarea>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="large btn submit-btn">Send Message</button>
+            </div>
+        </form>
     </div>
 </main>
 
@@ -41,24 +81,26 @@
         <div class="col-2">
             <div class="col">
                 <h2 class="large">Sign Up For Our Newsletter</h2>
-                <p>We offer the greatest deals to our subscribers. In addition, you will get monthly spiritual thoughts and study ideas. And as a special bonus each month we have a drawing for our subscribers for great prizes like free stays and local deals for your favorite attractions.</p>
+                <p>We offer the greatest deals to our subscribers. In addition, you will get monthly spiritual thoughts
+                    and study ideas. And as a special bonus each month we have a drawing for our subscribers for great
+                    prizes like free stays and local deals for your favorite attractions.</p>
             </div>
             <div class="col">
                 <form action="">
                     <div class="input-group">
                         <label for="first_name">First Name<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="first_name" type="text" placeholder="First Name" name="first_name" required>
+                        <input id="first_name" name="first_name" placeholder="First Name" required type="text">
                     </div>
                     <div class="input-group">
                         <label for="last_name">Last Name<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="last_name" type="text" placeholder="Last Name" name="last_name" required>
+                        <input id="last_name" name="last_name" placeholder="Last Name" required type="text">
                     </div>
                     <div class="input-group">
                         <label for="email">Email Address<i class="fas fa-asterisk required-icon"></i></label>
-                        <input id="email" type="email" placeholder="Email Address" name="email" required>
+                        <input id="email" name="email" placeholder="Email Address" required type="email">
                     </div>
                     <div class="input-group">
-                        <button type="submit" class="block large btn submit-btn">Sign Up Now</button>
+                        <button class="block large btn submit-btn" type="submit">Sign Up Now</button>
                     </div>
                 </form>
             </div>
@@ -89,19 +131,35 @@
             <div class="col">
                 <h4>Church Resources</h4>
                 <ul class="no-bullet">
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/">Church Website</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.comeuntochrist.org/">Come Unto Christ</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://newsroom.churchofjesuschrist.org/">Church Newsroom</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.youtube.com/user/MormonMessages">Church Channel</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://www.churchofjesuschrist.org/"
+                                                                      target="_blank">Church
+                        Website</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://www.comeuntochrist.org/"
+                                                                      target="_blank">Come Unto
+                        Christ</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://newsroom.churchofjesuschrist.org/"
+                                                                      target="_blank">Church
+                        Newsroom</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://www.youtube.com/user/MormonMessages"
+                                                                      target="_blank">Church
+                        Channel</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h4>Temple Resources</h4>
                 <ul class="no-bullet">
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://store.churchofjesuschrist.org/">Church Store</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples?lang=eng">Learn About Temples</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples/list?lang=eng">All Temples</a></li>
-                    <li><i class="fas fa-chevron-right spacer"></i><a target="_blank" href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng">Gallery</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://store.churchofjesuschrist.org/"
+                                                                      target="_blank">Church
+                        Store</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://www.churchofjesuschrist.org/temples?lang=eng"
+                                                                      target="_blank">Learn
+                        About Temples</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://www.churchofjesuschrist.org/temples/list?lang=eng"
+                                                                      target="_blank">All
+                        Temples</a></li>
+                    <li><i class="fas fa-chevron-right spacer"></i><a href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng"
+                                                                      target="_blank">Gallery</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -109,7 +167,8 @@
 </section>
 <footer>
     <div class="wide-container">
-        <p>&copy; <span id="footerYear"></span> Tyler Lazenby | The Temple Inn and Suites is a Fictional Company. Any Similarity to Existing Businesses is Purely Coincidental</p>
+        <p>&copy; <span id="footerYear"></span> Tyler Lazenby | The Temple Inn and Suites is a Fictional Company. Any
+            Similarity to Existing Businesses is Purely Coincidental</p>
     </div>
 </footer>
 <script src="script/navMenu.js"></script>
