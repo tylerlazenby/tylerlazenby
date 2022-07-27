@@ -1,0 +1,85 @@
+{
+  "contactLists": [
+      {
+          "id": 12,
+          "name": "Alpha"
+      },
+      {
+          "id": 14,
+          "name": "Beta"
+      },
+      {
+          "id": 34,
+          "name": "Chi"
+      },
+      {
+          "id": 16,
+          "name": "Delta"
+      },
+      {
+          "id": 17,
+          "name": "Epsilon"
+      },
+      {
+          "id": 19,
+          "name": "Eta"
+      },
+      {
+          "id": 15,
+          "name": "Gamma"
+      },
+      {
+          "id": 21,
+          "name": "Iota"
+      },
+      {
+          "id": 22,
+          "name": "Kappa"
+      },
+      {
+          "id": 23,
+          "name": "Lambda"
+      },
+      {
+          "id": 24,
+          "name": "Mu"
+      },
+      {
+          "id": 25,
+          "name": "Nu"
+      },
+      {
+          "id": 36,
+          "name": "Omega"
+      },
+      {
+          "id": 27,
+          "name": "Omicron"
+      },
+      {
+          "id": 33,
+          "name": "Phi"
+      },
+      {
+          "id": 28,
+          "name": "Pi"
+      },
+      {
+          "id": 35,
+          "name": "Psi"
+      },
+      {
+          "id": 29,
+          "name": "Rho"
+      },
+      {
+          "id": 30,
+          "name": "Sigma"
+      },
+      {
+          "id": 31,
+          "name": "Tau"
+      }
+  ],
+  "pages": 2
+}
